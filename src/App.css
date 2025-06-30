@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Grotesk";
+  src: url(../src/assets/fonts/SpaceGrotesk-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../src/assets/fonts/Inter_18pt-Regular.ttf);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --header-font: "Grotesk";
+  --text-font: "Inter";
+  --main-color: white;
+  --accent-color: #BDD6FF;
+  --max-width: 969px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.content {
+  padding: 50px;
+  min-height: 100vh;
+  margin-left: 359px;
+  overflow: auto;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--header-font);
+  letter-spacing: 0;
+  line-height: 110%;
+  color: var(--main-color);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+  font-family: var(--text-font);
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pill {
+  padding: 4px 12px;
+  border: 1px solid #2D67A6;
+  border-radius: 100px;
+  color: #D7EAFE;
+  font-size: 16px;
+  /* cursor: pointer; */
+}
+
+/* .pill:hover {
+  background-color: #122335;
+} */
+
+.case-hover {
+  position: relative;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.case-hover:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, black);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.pill:active {
+  background-color: #1F3C5B;
+}
+
+button {
+  font-family: var(--text-font);
+  font-size: 16px;
+  padding: 4px 12px;
+  border: 1px solid #2D67A6;
+  border-radius: 100px;
+  background: transparent;
+}
+
+button:hover {
+  background-color: #122335;
+}
+
+button:active {
+  background-color: #1F3C5B;
+}
+
+body {
+  background-image: url(../src/assets/images/home-bg.webp);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    padding: 50px;
+    min-height: 100vh;
+    margin-left: 0;
+    overflow: auto;
+    height: 100%;
+  }
+
+  body {
+    overflow: auto;
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    --max-width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  body {
+    background-image: url(../src/assets/images/mobile-bg.webp);
+  }
+
+  .pill {
+    padding: 10px 16px;
+    border: 1px solid #2D67A6;
+    border-radius: 100px;
+    color: #D7EAFE;
+    font-size: 16px;
+    /* cursor: pointer; */
+  }
+
+}

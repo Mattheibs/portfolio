@@ -1,0 +1,129 @@
+.sidebar {
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(36px);
+    -webkit-backdrop-filter: blur(36px);
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding: 56px 32px 0 32px;
+    width: 359px;
+    position: fixed;
+    z-index: 9999;
+}
+
+.border-bottom-line {
+    margin-top: 16px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sidebar a:hover .border-bottom-line {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.sidebar a p, .sidebar-mobile p {
+    color: var(--accent-color);
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.sidebar a p, .sidebar a h3, .sidebar a h1 {
+    padding-left: 10px;
+}
+
+.selected-menu {
+    border-left: 2px solid #1A87FB;
+}
+
+.selected-menu .border-bottom-line {
+    background-color: rgba(255, 255, 255, 1);
+    width: 96.5%;
+    margin-left: 10px;
+}
+
+.sidebar-mobile {
+    margin: 20px 24px 24px 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Base styles for the menu icon */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Transformations for the 'X' state */
+.menu-icon.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(9px, 9px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(9px, -9px);
+}
+
+
+.sidebar-mobile {
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+
+    .sidebar-mobile {
+        display: flex;
+        margin: 20px 50px 24px 50px;
+    }
+
+    .sidebar {
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(36px);
+        -webkit-backdrop-filter: blur(36px);
+        overflow: scroll;
+        gap: 50px;
+        height: calc(100vh - 98px);
+    }
+}
+
+.mobile-line {
+    display: none;
+}
+
+@media (max-width: 450px) {
+    .mobile-line {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.32);
+    }
+
+    .sidebar-mobile {
+        margin: 20px 20px 24px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

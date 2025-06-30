@@ -1,0 +1,20 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact a {
+    font-family: var(--header-font);
+    font-size: 56px;
+    text-decoration: none;
+    color: white;
+    line-height: 110%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 20px;
+}
+
+.contact a:hover {
+    color: #BDD6FF;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}

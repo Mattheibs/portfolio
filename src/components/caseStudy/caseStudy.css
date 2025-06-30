@@ -1,0 +1,139 @@
+.case-study {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.case-study-nav {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.case-study-nav p {
+    color: white;
+    font-size: 16px;
+}
+
+.case-study-nav a, .case-study-nav span {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+}
+
+.case-study .case-hover {
+    margin-bottom: 32px;
+}
+
+.case-study img {
+    max-width: 100%;
+}
+
+.case-study-content-header-link-view {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 21.5px;
+    cursor: pointer;
+}
+
+.view-website {
+    margin-top: 64px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 21.5px;
+    cursor: pointer;
+}
+
+
+.case-study-content-header-link {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.case-study-content {
+    margin-top: 96px;
+
+}
+
+.case-study-content h3 {
+    max-width: 600px;
+    margin: 64px auto 0 auto;
+}
+
+.case-study-image-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    margin-top: 64px;
+}
+
+.case-study-image-collection img {
+    min-height: 182px;
+}
+
+.case-study-full-image {
+    margin-top: 64px;
+}
+
+.case-study-description {
+    color: white;
+    font-size: 16px;
+    margin-top: 23px;
+    max-width: 600px;
+    margin: 23px auto 0 auto;
+}
+
+
+
+@media (max-width: 450px) {
+    .case-study-nav {
+        margin-bottom: 48px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .case-study .case-hover img {
+        min-height: 194px;
+        object-fit: cover;
+    }
+
+    .case-study-content-header-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .case-study-image-collection {
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+        margin-top: 48px;
+    }
+
+    .case-study-full-image {
+        margin-top: 48px;
+
+    }
+
+    .case-study-full-image img {
+        min-height: 264px;
+        object-fit: cover;
+    }
+
+    .view-website {
+        margin-bottom: 20px;
+    }
+
+    .case-study-content h3 {
+        margin-top: 48px;
+    }
+
+    .case-study-content {
+        margin-top: 0;
+    }
+}
