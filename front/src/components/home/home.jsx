@@ -1,8 +1,21 @@
-import React from "react";
+import axios from "axios";
 import "./home.css";
 import yes from "../../assets/images/yes.png";
 import { Link } from "react-router-dom";
 function Home() {
+	// const [data, setData] = useState(null);
+	async function fetchData() {
+		try {
+			const response = await axios.get(
+				"http://localhost:3000/api/projects"
+			);
+			console.log(response.data);
+		} catch (error) {
+			console.error("Error fetching data:", error);
+		}
+	}
+
+	fetchData();
 	const mainProjects = [
 		{
 			headerImage: yes,
