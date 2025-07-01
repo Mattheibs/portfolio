@@ -24,7 +24,7 @@ function App() {
 						<Route path="/more-info" element={<MoreInfo />} />
 						<Route path="/contact" element={<Contact />} />
 						<Route
-							path="/case-study/:projectName"
+							path="/case-study/:slug"
 							element={<CaseStudy />}
 						/>
 					</Routes>

@@ -24,11 +24,10 @@ exports.createProject = async (req, res, next) => {
 
 exports.getAllProjects = async (req, res, next) => {
 	try {
-		const project = await Project.find();
-		res.status(200).json({
-			status: "success",
-			data: project,
-		});
+		const project = await Project.find().select(
+			"slug displayImage languagesUsed name"
+		);
+		res.status(200).json(project);
 	} catch (err) {
 		res.status(400).json({
 			status: "error",
@@ -60,9 +59,7 @@ exports.updateProject = async (req, res, next) => {
 };
 
 exports.getProject = async (req, res, next) => {
-	const project = await Project.findOne({ slug: req.params.slug }).populate(
-		"guides"
-	);
+	const project = await Project.findOne({ slug: req.params.slug });
 
 	if (!project) {
 		res.status(400).json({
@@ -71,10 +68,7 @@ exports.getProject = async (req, res, next) => {
 		});
 		next();
 	}
-	res.status(200).json({
-		status: "success",
-		data: project,
-	});
+	res.status(200).json(project);
 };
 
 exports.deleteProject = async (req, res, next) => {

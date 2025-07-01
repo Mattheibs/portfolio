@@ -13,16 +13,14 @@ const projectSchema = new Schema({
 		unique: true,
 	},
 	gridImages: [String],
-	projectSections: [
-		{
-			title: String,
-			content: [String],
-		},
-	],
+	projectIntroduction: [String],
+	projectApproach: [String],
+	projectOutcome: [String],
 	displayImage: String,
 	largeDisplayImage: String,
 	languagesUsed: [String],
 	projectUrl: String,
+	slug: String,
 });
 projectSchema.pre("save", function (next) {
 	this.slug = slugify(this.name).toLowerCase();
