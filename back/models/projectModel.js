@@ -21,6 +21,7 @@ const projectSchema = new Schema({
 	languagesUsed: [String],
 	projectUrl: String,
 	slug: String,
+	metaDescription: String,
 });
 projectSchema.pre("save", function (next) {
 	this.slug = slugify(this.name).toLowerCase();

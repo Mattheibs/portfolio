@@ -2,6 +2,7 @@ import axios from "axios";
 import "./caseStudy.css";
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function CaseStudy() {
 	const [data, setData] = useState([]);
@@ -32,6 +33,23 @@ function CaseStudy() {
 
 	return (
 		<div className="case-study">
+			<Helmet>
+				{data ? (
+					<title>
+						{data.name} Case Study | Matthew's Frontend
+						Developer Portfolio
+					</title>
+				) : (
+					<title>
+						Matthew Heiberg | Frontend Developer Portfolio
+					</title>
+				)}
+
+				<meta
+					name="description"
+					content="Frontend Developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. I build fast, interactive, and scalable web applications with clean, modern code. Explore my portfolio to see my latest projects."
+				/>
+			</Helmet>
 			{data ? (
 				<>
 					<div className="case-study-nav">

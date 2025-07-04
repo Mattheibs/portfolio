@@ -2,6 +2,8 @@ import axios from "axios";
 import "./home.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 function Home() {
 	const [data, setData] = useState([]);
 	const [loading, setLoading] = useState(true);
@@ -31,6 +33,15 @@ function Home() {
 
 	return (
 		<div className="home">
+			<Helmet>
+				<title>
+					Matthew Heiberg | Frontend Developer Portfolio
+				</title>
+				<meta
+					name="description"
+					content="Frontend Developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. I build fast, interactive, and scalable web applications with clean, modern code. Explore my portfolio to see my latest projects."
+				/>
+			</Helmet>
 			{data.length > 0 ? (
 				data.map((project, index) => {
 					return (

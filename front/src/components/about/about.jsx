@@ -1,10 +1,20 @@
 import aboutImg from "../../assets/images/about.webp";
 import aboutImgMobile from "../../assets/images/about-mobile.webp";
 import "./about.css";
+import { Helmet } from "react-helmet";
 
 function About() {
 	return (
 		<div className="about">
+			<Helmet>
+				<title>
+					About Me | Matthew's Frontend Developer Portfolio
+				</title>
+				<meta
+					name="description"
+					content="Get in touch with Matthew Heiberg for frontend development projects, collaborations, or freelance opportunities. Let's build something great together!"
+				/>
+			</Helmet>
 			<picture>
 				<source
 					srcSet={aboutImgMobile}

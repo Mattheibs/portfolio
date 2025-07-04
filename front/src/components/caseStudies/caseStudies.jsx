@@ -1,6 +1,7 @@
 import "./caseStudies.css";
 import yes from "../../assets/images/yes.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 function CaseStudies() {
 	const caseStudies = [
 		{
@@ -22,6 +23,13 @@ function CaseStudies() {
 	];
 	return (
 		<div className="case-studies">
+			<title>
+				Case Studies | Matthew's Frontend Developer Portfolio
+			</title>
+			<meta
+				name="description"
+				content="Explore a collection of detailed frontend development case studies showcasing my work with React, JavaScript, HTMX, Node.js, and more."
+			/>
 			<div className="case-studies-filter">
 				<h3>Filter Categories:</h3>
 				<div className="case-studies-filter-pills">

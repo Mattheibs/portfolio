@@ -13,6 +13,7 @@
 		"displayImage": "src/assets/images/yes.png",
 		"largeDisplayImage": "src/assets/images/yes.png",
 		"languagesUsed": ["HTML", "CSS", "JavaScript"],
-		"projectUrl": "google.com"
+		"projectUrl": "google.com",
+		"metaDescription": "Finpulse is a responsive, interactive website developed using HTML, CSS, and JavaScript. This case study showcases my frontend development process, from planning to implementation, with a focus on performance, accessibility, and user experience."
 	}
 ]
