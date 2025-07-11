@@ -1,0 +1,38 @@
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.not-found h1 {
+    font-size: 271.21px;
+    margin-bottom: 22px;
+    line-height: 100%;
+}
+
+.not-found p {
+    font-size: 22px;
+    margin-bottom: 46px;
+    color: white;
+}
+
+.not-found div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.not-found div p {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 0;
+}
+
+.not-found div a {
+    font-size: 18px;
+    color: #1A87FB;
+    line-height: 18px;
+}
