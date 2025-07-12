@@ -146,14 +146,14 @@ function CaseStudy() {
 							{`{
 									"@context": "https://schema.org",
 									"@type": "CreativeWork",
-									headline: ${study.name},
-									author: {
+									"headline": ${study.name},
+									"author": {
 										"@type": "Person",
 										name: "Matthew Heiberg",
 									},
-									description:
+									"description":
 										${study.metaDescription},
-									url: "here",
+									"url": "here",
 								}`}
 						</script>,
 						<script key="script-2" type="application/ld+json">

@@ -79,7 +79,7 @@ function Home() {
 								"@type": "ListItem",
 								"position": 1,
 								"name": "Home",
-								"item": "here"
+								"item": "here-url"
 								}
 							]
 						}
