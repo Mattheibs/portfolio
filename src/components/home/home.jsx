@@ -10,6 +10,12 @@ function Home() {
 			displayImage: "wanderly-display-img.webp",
 			slug: "wanderly",
 		},
+		{
+			name: "Finpulse",
+			languagesUsed: ["HTML", "CSS", "JavaScript"],
+			displayImage: "wanderly-display-img.webp",
+			slug: "finpulse",
+		},
 	];
 	return (
 		<div className="home">
@@ -20,6 +26,33 @@ function Home() {
 				<meta
 					name="description"
 					content="Frontend Developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. I build fast, interactive, and scalable web applications with clean, modern code. Explore my portfolio to see my latest projects."
+				/>
+				<meta
+					property="og:title"
+					content="Matthew Heiberg | Frontend Developer Portfolio"
+				/>
+				<meta
+					property="og:description"
+					content="Frontend Developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. I build fast, interactive, and scalable web applications with clean, modern code. Explore my portfolio to see my latest projects."
+				/>
+				<meta
+					property="og:image"
+					content="https://example.com/og-image.jpg"
+				/>
+				<meta property="og:url" content="https://example.com" />
+				<meta property="og:type" content="website" />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta
+					name="twitter:title"
+					content="Matthew Heiberg | Frontend Developer Portfolio"
+				/>
+				<meta
+					name="twitter:description"
+					content="Frontend Developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. I build fast, interactive, and scalable web applications with clean, modern code. Explore my portfolio to see my latest projects."
+				/>
+				<meta
+					name="twitter:image"
+					content="https://example.com/twitter-image.jpg"
 				/>
 			</Helmet>
 			{data.length > 0 ? (

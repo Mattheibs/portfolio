@@ -29,6 +29,14 @@
     max-width: 100%;
 }
 
+.case-study-content-header {
+    margin-top: 2rem;
+}
+
+.case-study-content-header-link-view-bottom {
+    margin-top: 4rem;
+}
+
 .case-study-content-header-link-view {
     justify-content: center;
     display: flex;

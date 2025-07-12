@@ -9,9 +9,51 @@ function CaseStudies() {
 			displayImage: "wanderly-display-img.webp",
 			slug: "wanderly",
 		},
+		{
+			name: "Finpulse",
+			languagesUsed: ["HTML", "CSS", "JavaScript"],
+			displayImage: "wanderly-display-img.webp",
+			slug: "finpulse",
+		},
 	];
 	return (
 		<div className="case-studies">
+			<Helmet>
+				<title>
+					Case Studies | Matthew's Frontend Developer Portfolio
+				</title>
+				<meta
+					name="description"
+					content="Explore detailed case studies of web applications built by Matthew Heiberg, a frontend developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. Dive into real-world projects showcasing performance, scalability, and clean modern code."
+				/>
+				<meta
+					property="og:title"
+					content="Case Studies | Matthew's Frontend Developer Portfolio"
+				/>
+				<meta
+					property="og:description"
+					content="Explore detailed case studies of web applications built by Matthew Heiberg, a frontend developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. Dive into real-world projects showcasing performance, scalability, and clean modern code"
+				/>
+				<meta
+					property="og:image"
+					content="https://example.com/og-image.jpg"
+				/>
+				<meta property="og:url" content="https://example.com" />
+				<meta property="og:type" content="website" />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta
+					name="twitter:title"
+					content="Case Studies | Matthew's Frontend Developer Portfolio"
+				/>
+				<meta
+					name="twitter:description"
+					content="Explore detailed case studies of web applications built by Matthew Heiberg, a frontend developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. Dive into real-world projects showcasing performance, scalability, and clean modern code"
+				/>
+				<meta
+					name="twitter:image"
+					content="https://example.com/twitter-image.jpg"
+				/>
+			</Helmet>
 			<title>
 				Case Studies | Matthew's Frontend Developer Portfolio
 			</title>
@@ -52,7 +94,7 @@ function CaseStudies() {
 			<div className="case-study-projects-grid">
 				{caseStudies.slice(1).map((caseStudy, index) => (
 					<div key={index} className="case-study-projects">
-						<Link to={`/case-study/${caseStudy.name}`}>
+						<Link to={`/case-study/${caseStudy.slug}`}>
 							<div className="case-hover">
 								<img
 									src={caseStudy.displayImage}
@@ -62,7 +104,7 @@ function CaseStudies() {
 						</Link>
 						<h3>{caseStudy.name}</h3>
 						<div className="case-study-projects-tags">
-							{caseStudy.projectTags.map(
+							{caseStudy.languagesUsed.map(
 								(tag, tagIndex) => (
 									<p key={tagIndex} className="pill">
 										{tag}

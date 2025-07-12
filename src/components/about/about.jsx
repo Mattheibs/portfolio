@@ -14,6 +14,33 @@ function About() {
 					name="description"
 					content="Get in touch with Matthew Heiberg for frontend development projects, collaborations, or freelance opportunities. Let's build something great together!"
 				/>
+				<meta
+					property="og:title"
+					content="About Me | Matthew's Frontend Developer Portfolio"
+				/>
+				<meta
+					property="og:description"
+					content="Get in touch with Matthew Heiberg for frontend development projects, collaborations, or freelance opportunities. Let's build something great together!"
+				/>
+				<meta
+					property="og:image"
+					content="https://example.com/og-image.jpg"
+				/>
+				<meta property="og:url" content="https://example.com" />
+				<meta property="og:type" content="website" />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta
+					name="twitter:title"
+					content="About Me | Matthew's Frontend Developer Portfolio"
+				/>
+				<meta
+					name="twitter:description"
+					content="Get in touch with Matthew Heiberg for frontend development projects, collaborations, or freelance opportunities. Let's build something great together!"
+				/>
+				<meta
+					name="twitter:image"
+					content="https://example.com/twitter-image.jpg"
+				/>
 			</Helmet>
 			<picture>
 				<source

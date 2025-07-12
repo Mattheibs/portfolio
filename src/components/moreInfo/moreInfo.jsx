@@ -1,10 +1,20 @@
 import gaming from "../../assets/images/gaming.webp";
 import bouldering from "../../assets/images/bouldering.webp";
 import "./moreInfo.css";
+import { Helmet } from "react-helmet";
 
 function MoreInfo() {
 	return (
 		<div className="more-info">
+			<Helmet>
+				<title>
+					More Info | Matthew's Frontend Developer Portfolio
+				</title>
+				<meta
+					name="description"
+					content="Learn more about Matthew Heiberg beyond code. Discover how passions like gaming and bouldering fuel his creativity, problem-solving, and focus as a frontend developer. A glimpse into the person behind the projects."
+				/>
+			</Helmet>
 			<div className="more-info-grid-item">
 				<h2>Gaming</h2>
 				<p>

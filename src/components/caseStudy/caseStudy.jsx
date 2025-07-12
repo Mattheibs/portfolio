@@ -30,6 +30,31 @@ function CaseStudy() {
 				"Finpulse is a responsive, interactive website developed using HTML, CSS, and JavaScript. This case study showcases my frontend development process, from planning to implementation, with a focus on performance, accessibility, and user experience.",
 			slug: "wanderly",
 		},
+		{
+			name: "Finpulse",
+			gridImages: [
+				"wanderly-grid-1.webp",
+				"wanderly-grid-2.webp",
+				"wanderly-grid-3.webp",
+			],
+			projectIntroduction: [
+				"I recently completed building a responsive and interactive website using HTML, CSS, and JavaScript. The goal of the project was to create a user-friendly and visually appealing platform that could effectively communicate information and provide a seamless browsing experience. This project not only allowed me to showcase my front-end development skills but also provided an opportunity to experiment with modern web design techniques.",
+			],
+			projectApproach: [
+				"The development process began with thorough planning, where I outlined the structure of the website and defined the key features and user interactions. Using HTML, I created the foundation and structure of the website, ensuring semantic markup for accessibility and SEO optimization. For the styling, I employed CSS to design a clean and professional layout, incorporating responsive design principles to make the website functional across different screen sizes and devices.",
+				"To enhance interactivity, I utilized JavaScript to implement dynamic elements, such as interactive menus, form validation, and animations. I focused on optimizing performance by ensuring efficient use of resources and keeping the code modular and maintainable. Throughout the project, I followed best practices in web development, including code validation and testing across multiple browsers.",
+			],
+			projectOutcome: [
+				"The result is a fully functional, responsive website that meets modern design and usability standards. The site features a polished user interface, smooth navigation, and interactive elements that enhance the overall user experience. By using HTML, CSS, and JavaScript effectively, I created a platform that not only fulfills its intended purpose but also demonstrates my technical expertise and creativity in web development.",
+			],
+			displayImage: "wanderly-display-img.webp",
+			largeDisplayImage: "wanderly-large-display.webp",
+			languagesUsed: ["HTML", "CSS", "JavaScript"],
+			projectUrl: "https://www.google.com",
+			metaDescription:
+				"Finpulse is a responsive, interactive website developed using HTML, CSS, and JavaScript. This case study showcases my frontend development process, from planning to implementation, with a focus on performance, accessibility, and user experience.",
+			slug: "finpulse",
+		},
 	];
 
 	const study = data.find((cs) => cs.slug === slug);
@@ -38,20 +63,55 @@ function CaseStudy() {
 		<div className="case-study">
 			<Helmet>
 				{study ? (
-					<title>
-						{study.name} Case Study | Matthew's Frontend
-						Developer Portfolio
-					</title>
+					[
+						<title key="title">
+							{study.name} Case Study | Matthew's Frontend
+							Developer Portfolio
+						</title>,
+						<meta
+							key="meta"
+							name="description"
+							content={study.metaDescription}
+						/>,
+						<meta
+							property="og:title"
+							content={`${study.name} Case Study | Matthew's Frontend Developer Portfolio`}
+						/>,
+						<meta
+							property="og:description"
+							content={study.metaDescription}
+						/>,
+						<meta
+							property="og:image"
+							content="https://example.com/og-image.jpg"
+						/>,
+						<meta
+							property="og:url"
+							content="https://example.com"
+						/>,
+						<meta property="og:type" content="website" />,
+						<meta
+							name="twitter:card"
+							content="summary_large_image"
+						/>,
+						<meta
+							name="twitter:title"
+							content={`${study.name} Case Study | Matthew's Frontend Developer Portfolio`}
+						/>,
+						<meta
+							name="twitter:description"
+							content={study.metaDescription}
+						/>,
+						<meta
+							name="twitter:image"
+							content="https://example.com/twitter-image.jpg"
+						/>,
+					]
 				) : (
 					<title>
 						Matthew Heiberg | Frontend Developer Portfolio
 					</title>
 				)}
-
-				<meta
-					name="description"
-					content="Frontend Developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. I build fast, interactive, and scalable web applications with clean, modern code. Explore my portfolio to see my latest projects."
-				/>
 			</Helmet>
 			{study ? (
 				<>
@@ -166,7 +226,7 @@ function CaseStudy() {
 								</p>
 							))}
 					</section>
-					<div className="case-study-content-header-link-view">
+					<div className="case-study-content-header-link-view case-study-content-header-link-view-bottom">
 						<a
 							href={study.projectUrl}
 							target="_blank"
