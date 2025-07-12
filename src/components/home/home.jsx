@@ -13,7 +13,7 @@ function Home() {
 		{
 			name: "Finpulse",
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
-			displayImage: "wanderly-display-img.webp",
+			displayImage: "finpulse-display-img.webp",
 			slug: "finpulse",
 		},
 	];

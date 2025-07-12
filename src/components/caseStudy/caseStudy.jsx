@@ -13,17 +13,17 @@ function CaseStudy() {
 				"wanderly-grid-3.webp",
 			],
 			projectIntroduction: [
-				"I recently completed building a responsive and interactive website using HTML, CSS, and JavaScript. The goal of the project was to create a user-friendly and visually appealing platform that could effectively communicate information and provide a seamless browsing experience. This project not only allowed me to showcase my front-end development skills but also provided an opportunity to experiment with modern web design techniques.",
+				"I recently completed building a responsive and interactive web application using Vite and React. The goal of the project was to create a modern, user-friendly platform with an intuitive interface and smooth performance. This project allowed me to deepen my experience with React while leveraging Vite’s fast development environment and optimized build process to enhance both development efficiency and user experience.",
 			],
 			projectApproach: [
-				"The development process began with thorough planning, where I outlined the structure of the website and defined the key features and user interactions. Using HTML, I created the foundation and structure of the website, ensuring semantic markup for accessibility and SEO optimization. For the styling, I employed CSS to design a clean and professional layout, incorporating responsive design principles to make the website functional across different screen sizes and devices.",
-				"To enhance interactivity, I utilized JavaScript to implement dynamic elements, such as interactive menus, form validation, and animations. I focused on optimizing performance by ensuring efficient use of resources and keeping the code modular and maintainable. Throughout the project, I followed best practices in web development, including code validation and testing across multiple browsers.",
+				"The development process began with careful planning and wireframing to define the application’s layout, core features, and user interactions. I used React to build a component-based architecture, which allowed for reusable, modular code and simplified state management. The structure of the application was organized for scalability, and attention was given to semantic HTML within React components to support accessibility and SEO.",
+				"Using Vite as the build tool significantly improved development speed and performance. Its fast Hot Module Replacement (HMR) and optimized bundling allowed me to iterate quickly and deploy a lightweight, high-performance web app. Throughout the process, I adhered to modern best practices, including testing across various devices and browsers to ensure consistent functionality and responsiveness.",
 			],
 			projectOutcome: [
-				"The result is a fully functional, responsive website that meets modern design and usability standards. The site features a polished user interface, smooth navigation, and interactive elements that enhance the overall user experience. By using HTML, CSS, and JavaScript effectively, I created a platform that not only fulfills its intended purpose but also demonstrates my technical expertise and creativity in web development.",
+				"The final product is a responsive, high-performing React application that aligns with modern web development standards. It features a polished UI, seamless navigation, and dynamic interactions that contribute to an enjoyable user experience. By combining Vite’s speed and React’s flexibility, I delivered a professional-grade application that highlights both my front-end development skills and my ability to work with modern JavaScript frameworks and tooling",
 			],
 			displayImage: "wanderly-display-img.webp",
-			largeDisplayImage: "wanderly-large-display.webp",
+			closingImg: "wanderly-closing-img.webp",
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
 			projectUrl: "https://www.google.com",
 			metaDescription:
@@ -33,9 +33,9 @@ function CaseStudy() {
 		{
 			name: "Finpulse",
 			gridImages: [
-				"wanderly-grid-1.webp",
-				"wanderly-grid-2.webp",
-				"wanderly-grid-3.webp",
+				"finpulse-grid-1.webp",
+				"finpulse-grid-2.webp",
+				"finpulse-grid-3.webp",
 			],
 			projectIntroduction: [
 				"I recently completed building a responsive and interactive website using HTML, CSS, and JavaScript. The goal of the project was to create a user-friendly and visually appealing platform that could effectively communicate information and provide a seamless browsing experience. This project not only allowed me to showcase my front-end development skills but also provided an opportunity to experiment with modern web design techniques.",
@@ -47,8 +47,8 @@ function CaseStudy() {
 			projectOutcome: [
 				"The result is a fully functional, responsive website that meets modern design and usability standards. The site features a polished user interface, smooth navigation, and interactive elements that enhance the overall user experience. By using HTML, CSS, and JavaScript effectively, I created a platform that not only fulfills its intended purpose but also demonstrates my technical expertise and creativity in web development.",
 			],
-			displayImage: "wanderly-display-img.webp",
-			largeDisplayImage: "wanderly-large-display.webp",
+			displayImage: "finpulse-display-img.webp",
+			closingImg: "finpulse-closing-img.webp",
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
 			projectUrl: "https://www.google.com",
 			metaDescription:
@@ -210,7 +210,7 @@ function CaseStudy() {
 							))}
 						<div className="case-study-full-image">
 							<img
-								src={`/src/assets/images/${study.slug}/${study.largeDisplayImage}`}
+								src={`/src/assets/images/${study.slug}/${study.closingImg}`}
 								alt={`${study.name} preview`}
 							></img>
 						</div>
