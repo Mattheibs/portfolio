@@ -41,6 +41,19 @@ function About() {
 					name="twitter:image"
 					content="https://example.com/twitter-image.jpg"
 				/>
+				<script type="application/ld+json">
+					{`{
+						"@context": "https://schema.org",
+						"@type": "AboutPage",
+						"name": "About Me",
+						"mainEntity": {
+							"@type": "Person",
+							"name": "Matthew Heiberg",
+							"jobTitle": "Frontend Developer",
+							"description": "Here"
+						}
+					`}
+				</script>
 			</Helmet>
 			<picture>
 				<source

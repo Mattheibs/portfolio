@@ -14,6 +14,19 @@ function MoreInfo() {
 					name="description"
 					content="Learn more about Matthew Heiberg beyond code. Discover how passions like gaming and bouldering fuel his creativity, problem-solving, and focus as a frontend developer. A glimpse into the person behind the projects."
 				/>
+				<script type="application/ld+json">
+					{`{
+						"@context": "https://schema.org",
+						"@type": "AboutPage",
+						"name": "About Me",
+						"mainEntity": {
+							"@type": "Person",
+							"name": "Matthew Heiberg",
+							"jobTitle": "Frontend Developer",
+							"description": "Here"
+						}
+					`}
+				</script>
 			</Helmet>
 			<div className="more-info-grid-item">
 				<h2>Gaming</h2>

@@ -54,6 +54,37 @@ function Home() {
 					name="twitter:image"
 					content="https://example.com/twitter-image.jpg"
 				/>
+				<script type="application/ld+json">
+					{`
+						{
+							"@context": "https://schema.org",
+							"@type": "Person",
+							"name": "Matthew Heiberg",
+							"url": "here",
+							"jobTitle": "Frontend Developer",
+							"sameAs": [
+								"here",
+								"here"
+							]
+						}
+					`}
+				</script>
+				<script type="application/ld+json">
+					{`
+						{
+							"@context": "https://schema.org",
+							"@type": "BreadcrumbList",
+							"itemListElement": [
+								{
+								"@type": "ListItem",
+								"position": 1,
+								"name": "Home",
+								"item": "here"
+								}
+							]
+						}
+					`}
+				</script>
 			</Helmet>
 			{data.length > 0 ? (
 				data.map((project, index) => {

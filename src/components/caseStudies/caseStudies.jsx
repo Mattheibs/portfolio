@@ -12,10 +12,11 @@ function CaseStudies() {
 		{
 			name: "Finpulse",
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
-			displayImage: "wanderly-display-img.webp",
+			displayImage: "finpulse-display-img.webp",
 			slug: "finpulse",
 		},
 	];
+
 	return (
 		<div className="case-studies">
 			<Helmet>
@@ -53,6 +54,49 @@ function CaseStudies() {
 					name="twitter:image"
 					content="https://example.com/twitter-image.jpg"
 				/>
+				<script type="application/ld+json">
+					{`
+						"@context": "https://schema.org",
+						"@type": "CollectionPage",
+						"name": "Case Studies",
+						"mainEntity": [
+							{
+							"@type": "CreativeWork",
+							"name": "Wanderly",
+							"url": "here",
+							"description": "here"
+							},
+							{
+							"@type": "CreativeWork",
+							"name": "Finpulse",
+							"url": "here",
+							"description": "here"
+							}
+						]
+					`}
+				</script>
+				<script type="application/ld+json">
+					{`
+						{
+							"@context": "https://schema.org",
+							"@type": "BreadcrumbList",
+							"itemListElement": [
+								{
+								"@type": "ListItem",
+								"position": 1,
+								"name": "Home",
+								"item": "here"
+								},
+								{
+								"@type": "ListItem",
+								"position": 2,
+								"name": "Case Studies",
+								"item": "here"
+								}
+							]
+						}
+					`}
+				</script>
 			</Helmet>
 			<title>
 				Case Studies | Matthew's Frontend Developer Portfolio
@@ -97,7 +141,7 @@ function CaseStudies() {
 						<Link to={`/case-study/${caseStudy.slug}`}>
 							<div className="case-hover">
 								<img
-									src={caseStudy.displayImage}
+									src={`/src/assets/images/${caseStudy.slug}/${caseStudy.displayImage}`}
 									alt={`${caseStudy.name} preview`}
 								/>
 							</div>

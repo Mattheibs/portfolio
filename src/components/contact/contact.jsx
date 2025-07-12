@@ -39,6 +39,20 @@ function Contact() {
 					name="twitter:image"
 					content="https://example.com/twitter-image.jpg"
 				/>
+				<script type="application/ld+json">
+					{`{
+						"@context": "https://schema.org",
+						"@type": "ContactPage",
+						"name": "Contact Me",
+						"mainEntity": {
+							"@type": "Person",
+							"name": "Matthew Heiberg",
+							"email": "mailto:mattheibs@gmail.com",
+							"url": "here"
+						}
+						}
+					`}
+				</script>
 			</Helmet>
 			<a
 				target="_blank"

@@ -27,7 +27,7 @@ function CaseStudy() {
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
 			projectUrl: "https://www.google.com",
 			metaDescription:
-				"Finpulse is a responsive, interactive website developed using HTML, CSS, and JavaScript. This case study showcases my frontend development process, from planning to implementation, with a focus on performance, accessibility, and user experience.",
+				"Wanderly is  a responsive React web app built with Vite, featuring fast performance, modern UI, and mobile-friendly design using best front-end development practices.",
 			slug: "wanderly",
 		},
 		{
@@ -58,6 +58,30 @@ function CaseStudy() {
 	];
 
 	const study = data.find((cs) => cs.slug === slug);
+	const breadcrumbJsonLd = {
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: [
+			{
+				"@type": "ListItem",
+				position: 1,
+				name: "Home",
+				item: "here",
+			},
+			{
+				"@type": "ListItem",
+				position: 2,
+				name: "Case Studies",
+				item: "here/case-studies",
+			},
+			{
+				"@type": "ListItem",
+				position: 3,
+				name: study.name,
+				item: `here/case-study/${study.slug}`,
+			},
+		],
+	};
 
 	return (
 		<div className="case-study">
@@ -74,38 +98,67 @@ function CaseStudy() {
 							content={study.metaDescription}
 						/>,
 						<meta
+							key="og-title"
 							property="og:title"
 							content={`${study.name} Case Study | Matthew's Frontend Developer Portfolio`}
 						/>,
 						<meta
+							key="og-description"
 							property="og:description"
 							content={study.metaDescription}
 						/>,
 						<meta
+							key="og-image"
 							property="og:image"
-							content="https://example.com/og-image.jpg"
+							content="here"
 						/>,
 						<meta
+							key="og-url"
 							property="og:url"
-							content="https://example.com"
+							content="here"
 						/>,
-						<meta property="og:type" content="website" />,
 						<meta
+							key="og-type"
+							property="og:type"
+							content="website"
+						/>,
+						<meta
+							key="twitter-card-img"
 							name="twitter:card"
 							content="summary_large_image"
 						/>,
 						<meta
+							key="twitter-title"
 							name="twitter:title"
 							content={`${study.name} Case Study | Matthew's Frontend Developer Portfolio`}
 						/>,
 						<meta
+							key="twitter-description"
 							name="twitter:description"
 							content={study.metaDescription}
 						/>,
 						<meta
+							key="twitter-img"
 							name="twitter:image"
-							content="https://example.com/twitter-image.jpg"
+							content="here/twitter-image.jpg"
 						/>,
+						<script key="script-1" type="application/ld+json">
+							{`{
+									"@context": "https://schema.org",
+									"@type": "CreativeWork",
+									headline: ${study.name},
+									author: {
+										"@type": "Person",
+										name: "Matthew Heiberg",
+									},
+									description:
+										${study.metaDescription},
+									url: "here",
+								}`}
+						</script>,
+						<script key="script-2" type="application/ld+json">
+							{JSON.stringify(breadcrumbJsonLd)}
+						</script>,
 					]
 				) : (
 					<title>
