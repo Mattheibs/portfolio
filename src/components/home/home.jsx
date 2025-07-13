@@ -23,6 +23,7 @@ function Home() {
 				<title>
 					Matthew Heiberg | Frontend Developer Portfolio
 				</title>
+				<link rel="canonical" href="here/about" />,
 				<meta
 					name="description"
 					content="Frontend Developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. I build fast, interactive, and scalable web applications with clean, modern code. Explore my portfolio to see my latest projects."

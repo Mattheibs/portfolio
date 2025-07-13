@@ -23,6 +23,7 @@ function CaseStudies() {
 				<title>
 					Case Studies | Matthew's Frontend Developer Portfolio
 				</title>
+				<link rel="canonical" href="here/about" />
 				<meta
 					name="description"
 					content="Explore detailed case studies of web applications built by Matthew Heiberg, a frontend developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. Dive into real-world projects showcasing performance, scalability, and clean modern code."

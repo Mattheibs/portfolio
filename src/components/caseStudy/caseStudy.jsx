@@ -86,64 +86,68 @@ function CaseStudy() {
 	return (
 		<div className="case-study">
 			<Helmet>
-				{study ? (
-					[
-						<title key="title">
-							{study.name} Case Study | Matthew's Frontend
-							Developer Portfolio
-						</title>,
-						<meta
-							key="meta"
-							name="description"
-							content={study.metaDescription}
-						/>,
-						<meta
-							key="og-title"
-							property="og:title"
-							content={`${study.name} Case Study | Matthew's Frontend Developer Portfolio`}
-						/>,
-						<meta
-							key="og-description"
-							property="og:description"
-							content={study.metaDescription}
-						/>,
-						<meta
-							key="og-image"
-							property="og:image"
-							content="here"
-						/>,
-						<meta
-							key="og-url"
-							property="og:url"
-							content="here"
-						/>,
-						<meta
-							key="og-type"
-							property="og:type"
-							content="website"
-						/>,
-						<meta
-							key="twitter-card-img"
-							name="twitter:card"
-							content="summary_large_image"
-						/>,
-						<meta
-							key="twitter-title"
-							name="twitter:title"
-							content={`${study.name} Case Study | Matthew's Frontend Developer Portfolio`}
-						/>,
-						<meta
-							key="twitter-description"
-							name="twitter:description"
-							content={study.metaDescription}
-						/>,
-						<meta
-							key="twitter-img"
-							name="twitter:image"
-							content="here/twitter-image.jpg"
-						/>,
-						<script key="script-1" type="application/ld+json">
-							{`{
+				{study
+					? [
+							<title key="title">
+								{study.name} Case Study | Matthew's
+								Frontend Developer Portfolio
+							</title>,
+							<link rel="canonical" href="here/about" />,
+							<meta
+								key="meta"
+								name="description"
+								content={study.metaDescription}
+							/>,
+							<meta
+								key="og-title"
+								property="og:title"
+								content={`${study.name} Case Study | Matthew's Frontend Developer Portfolio`}
+							/>,
+							<meta
+								key="og-description"
+								property="og:description"
+								content={study.metaDescription}
+							/>,
+							<meta
+								key="og-image"
+								property="og:image"
+								content="here"
+							/>,
+							<meta
+								key="og-url"
+								property="og:url"
+								content="here"
+							/>,
+							<meta
+								key="og-type"
+								property="og:type"
+								content="website"
+							/>,
+							<meta
+								key="twitter-card-img"
+								name="twitter:card"
+								content="summary_large_image"
+							/>,
+							<meta
+								key="twitter-title"
+								name="twitter:title"
+								content={`${study.name} Case Study | Matthew's Frontend Developer Portfolio`}
+							/>,
+							<meta
+								key="twitter-description"
+								name="twitter:description"
+								content={study.metaDescription}
+							/>,
+							<meta
+								key="twitter-img"
+								name="twitter:image"
+								content="here/twitter-image.jpg"
+							/>,
+							<script
+								key="script-1"
+								type="application/ld+json"
+							>
+								{`{
 									"@context": "https://schema.org",
 									"@type": "CreativeWork",
 									"headline": ${study.name},
@@ -155,16 +159,21 @@ function CaseStudy() {
 										${study.metaDescription},
 									"url": "here",
 								}`}
-						</script>,
-						<script key="script-2" type="application/ld+json">
-							{JSON.stringify(breadcrumbJsonLd)}
-						</script>,
-					]
-				) : (
-					<title>
-						Matthew Heiberg | Frontend Developer Portfolio
-					</title>
-				)}
+							</script>,
+							<script
+								key="script-2"
+								type="application/ld+json"
+							>
+								{JSON.stringify(breadcrumbJsonLd)}
+							</script>,
+					  ]
+					: [
+							<title>
+								Matthew Heiberg | Frontend Developer
+								Portfolio
+							</title>,
+							<link rel="canonical" href="here/about" />,
+					  ]}
 			</Helmet>
 			{study ? (
 				<>

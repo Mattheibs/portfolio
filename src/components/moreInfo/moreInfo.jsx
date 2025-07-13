@@ -12,6 +12,7 @@ function MoreInfo() {
 				<title>
 					More Info | Matthew's Frontend Developer Portfolio
 				</title>
+				<link rel="canonical" href="here/about" />,
 				<meta
 					name="description"
 					content="Learn more about Matthew Heiberg beyond code. Discover how passions like gaming and bouldering fuel his creativity, problem-solving, and focus as a frontend developer. A glimpse into the person behind the projects."
@@ -52,7 +53,7 @@ function MoreInfo() {
 					width="500"
 					height="370"
 					src={gaming}
-					alt="Matthew paddling"
+					alt="Somone gaming"
 				/>
 			</picture>
 			<picture>
@@ -64,7 +65,7 @@ function MoreInfo() {
 					width="500"
 					height="370"
 					src={bouldering}
-					alt="Matthew paddling"
+					alt="Bouldering wall"
 				/>
 			</picture>
 			<div className="more-info-grid-item">

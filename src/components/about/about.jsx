@@ -10,6 +10,7 @@ function About() {
 				<title>
 					About Me | Matthew's Frontend Developer Portfolio
 				</title>
+				<link rel="canonical" href="here/about" />
 				<meta
 					name="description"
 					content="Get in touch with Matthew Heiberg for frontend development projects, collaborations, or freelance opportunities. Let's build something great together!"
