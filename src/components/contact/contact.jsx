@@ -1,5 +1,5 @@
 import "./contact.css";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 function Contact() {
 	return (

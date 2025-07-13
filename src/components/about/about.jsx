@@ -1,7 +1,7 @@
 import aboutImg from "/images/about.webp";
 import aboutImgMobile from "/images/about-mobile.webp";
 import "./about.css";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 function About() {
 	return (

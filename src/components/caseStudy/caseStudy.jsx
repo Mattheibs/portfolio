@@ -1,6 +1,6 @@
 import "./caseStudy.css";
 import { useParams, Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 function CaseStudy() {
 	const { slug } = useParams();

@@ -1,7 +1,7 @@
 import gaming from "/images/gaming.webp";
 import bouldering from "/images/bouldering.webp";
 import "./moreInfo.css";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 function MoreInfo() {
 	return (
