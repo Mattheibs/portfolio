@@ -1,5 +1,7 @@
 import gaming from "/images/gaming.webp";
 import bouldering from "/images/bouldering.webp";
+import gamingMobile from "/images/gaming-mobile.webp";
+import boulderingMobile from "/images/bouldering-mobile.webp";
 import "./moreInfo.css";
 import { Helmet } from "react-helmet-async";
 
@@ -44,8 +46,27 @@ function MoreInfo() {
 					gaming is an integral part of how I relax and recharge.
 				</p>
 			</div>
-			<img src={gaming} alt="Person gaming" />
-			<img src={bouldering} alt="Person climbing" />
+			<picture>
+				<source srcSet={gamingMobile} media="(max-width: 768px)" />
+				<img
+					width="500"
+					height="370"
+					src={gaming}
+					alt="Matthew paddling"
+				/>
+			</picture>
+			<picture>
+				<source
+					srcSet={boulderingMobile}
+					media="(max-width: 768px)"
+				/>
+				<img
+					width="500"
+					height="370"
+					src={bouldering}
+					alt="Matthew paddling"
+				/>
+			</picture>
 			<div className="more-info-grid-item">
 				<h2>Bouldering</h2>
 				<p>

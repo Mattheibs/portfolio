@@ -244,6 +244,7 @@ function CaseStudy() {
 							{study.gridImages.length > 1 &&
 								study.gridImages.map((image, index) => (
 									<img
+										loading="lazy"
 										key={index}
 										src={`/images/${study.slug}/${image}`}
 										alt={`${study.name} preview`}
@@ -263,6 +264,7 @@ function CaseStudy() {
 							))}
 						<div className="case-study-full-image">
 							<img
+								loading="lazy"
 								src={`/images/${study.slug}/${study.closingImg}`}
 								alt={`${study.name} preview`}
 							></img>

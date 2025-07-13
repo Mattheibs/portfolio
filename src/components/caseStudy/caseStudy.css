@@ -33,6 +33,13 @@
     margin-top: 2rem;
 }
 
+.case-study-projects-tags {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .case-study-content-header-link-view-bottom {
     margin-top: 4rem;
 }
