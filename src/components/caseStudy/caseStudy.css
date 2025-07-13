@@ -117,9 +117,10 @@
         font-size: 24px;
     }
 
-    .case-study .case-hover img {
-        min-height: 194px;
+    .case-study .case-hover picture img {
+        max-height: 194px;
         object-fit: cover;
+        max-width: 100%s;
     }
 
     .case-study-content-header-link {
@@ -139,8 +140,9 @@
 
     }
 
-    .case-study-full-image img {
-        min-height: 264px;
+    .case-study-full-image picture img {
+        max-height: 264px;
+        max-width: 100%;
         object-fit: cover;
     }
 

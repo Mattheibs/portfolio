@@ -24,6 +24,8 @@ function CaseStudy() {
 			],
 			displayImage: "wanderly-display-img.webp",
 			closingImg: "wanderly-closing-img.webp",
+			displayImageMobile: "wanderly-display-img-mobile.webp",
+			closingImgMobile: "wanderly-closing-img-mobile.webp",
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
 			projectUrl: "https://www.google.com",
 			metaDescription:
@@ -49,6 +51,8 @@ function CaseStudy() {
 			],
 			displayImage: "finpulse-display-img.webp",
 			closingImg: "finpulse-closing-img.webp",
+			displayImageMobile: "finpulse-display-img-mobile.webp",
+			closingImgMobile: "finpulse-closing-img-mobile.webp",
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
 			projectUrl: "https://www.google.com",
 			metaDescription:
@@ -188,10 +192,18 @@ function CaseStudy() {
 						rel="noopener noreferrer"
 						className="case-hover"
 					>
-						<img
-							src={`/images/${study.slug}/${study.displayImage}`}
-							alt={`${study.name} preview`}
-						/>
+						<picture>
+							<source
+								srcSet={`/images/${study.slug}/${study.displayImageMobile}`}
+								media="(max-width: 768px)"
+							/>
+							<img
+								width="969"
+								height="431"
+								src={`/images/${study.slug}/${study.displayImage}`}
+								alt="Somone gaming"
+							/>
+						</picture>
 					</a>
 					<section className="case-study-content-header">
 						<h3>{study.name}</h3>
@@ -272,11 +284,19 @@ function CaseStudy() {
 								</p>
 							))}
 						<div className="case-study-full-image">
-							<img
-								loading="lazy"
-								src={`/images/${study.slug}/${study.closingImg}`}
-								alt={`${study.name} preview`}
-							></img>
+							<picture>
+								<source
+									srcSet={`/images/${study.slug}/${study.closingImgMobile}`}
+									media="(max-width: 768px)"
+								/>
+								<img
+									loading="lazy"
+									width="969"
+									height="785"
+									src={`/images/${study.slug}/${study.closingImg}`}
+									alt="Somone gaming"
+								/>
+							</picture>
 						</div>
 						<h3>Outcome</h3>
 						{study.projectOutcome.length > 0 &&
