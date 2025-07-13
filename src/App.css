@@ -1,11 +1,17 @@
 @font-face {
   font-family: "Grotesk";
-  src: url(../src/assets/fonts/SpaceGrotesk-Regular.ttf);
+  src: url("./assets/fonts/SpaceGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url(../src/assets/fonts/Inter_18pt-Regular.ttf);
+  src: url("./assets/fonts/Inter_18pt-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 *, *::before, *::after {
@@ -117,7 +123,7 @@ button:active {
 }
 
 body {
-  background-image: url(../src/assets/images/home-bg.webp);
+  background-image: url(../images/home-bg.webp);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   overflow: hidden;
@@ -164,7 +170,7 @@ body {
   }
 
   body {
-    background-image: url(../src/assets/images/mobile-bg.webp);
+    background-image: url(../images/mobile-bg.webp);
   }
 
   .pill {

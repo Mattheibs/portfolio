@@ -1,5 +1,5 @@
-import gaming from "../../assets/images/gaming.webp";
-import bouldering from "../../assets/images/bouldering.webp";
+import gaming from "/images/gaming.webp";
+import bouldering from "/images/bouldering.webp";
 import "./moreInfo.css";
 import { Helmet } from "react-helmet";
 

@@ -180,7 +180,7 @@ function CaseStudy() {
 						className="case-hover"
 					>
 						<img
-							src={`/src/assets/images/${study.slug}/${study.displayImage}`}
+							src={`/images/${study.slug}/${study.displayImage}`}
 							alt={`${study.name} preview`}
 						/>
 					</a>
@@ -245,7 +245,7 @@ function CaseStudy() {
 								study.gridImages.map((image, index) => (
 									<img
 										key={index}
-										src={`/src/assets/images/${study.slug}/${image}`}
+										src={`/images/${study.slug}/${image}`}
 										alt={`${study.name} preview`}
 									></img>
 								))}
@@ -263,7 +263,7 @@ function CaseStudy() {
 							))}
 						<div className="case-study-full-image">
 							<img
-								src={`/src/assets/images/${study.slug}/${study.closingImg}`}
+								src={`/images/${study.slug}/${study.closingImg}`}
 								alt={`${study.name} preview`}
 							></img>
 						</div>

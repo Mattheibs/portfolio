@@ -1,5 +1,5 @@
-import aboutImg from "../../assets/images/about.webp";
-import aboutImgMobile from "../../assets/images/about-mobile.webp";
+import aboutImg from "/images/about.webp";
+import aboutImgMobile from "/images/about-mobile.webp";
 import "./about.css";
 import { Helmet } from "react-helmet";
 
