@@ -27,7 +27,7 @@ function CaseStudy() {
 			displayImageMobile: "wanderly-display-img-mobile.webp",
 			closingImgMobile: "wanderly-closing-img-mobile.webp",
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
-			projectUrl: "https://www.google.com",
+			projectUrl: "https://wanderly.mattheibs.com",
 			metaDescription:
 				"Wanderly is  a responsive React web app built with Vite, featuring fast performance, modern UI, and mobile-friendly design using best front-end development practices.",
 			slug: "wanderly",
@@ -54,7 +54,7 @@ function CaseStudy() {
 			displayImageMobile: "finpulse-display-img-mobile.webp",
 			closingImgMobile: "finpulse-closing-img-mobile.webp",
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
-			projectUrl: "https://www.google.com",
+			projectUrl: "https://finpulse.mattheibs.com",
 			metaDescription:
 				"Finpulse is a responsive, interactive website developed using HTML, CSS, and JavaScript. This case study showcases my frontend development process, from planning to implementation, with a focus on performance, accessibility, and user experience.",
 			slug: "finpulse",
@@ -70,19 +70,19 @@ function CaseStudy() {
 				"@type": "ListItem",
 				position: 1,
 				name: "Home",
-				item: "here",
+				item: "https://www.mattheibs.com",
 			},
 			{
 				"@type": "ListItem",
 				position: 2,
 				name: "Case Studies",
-				item: "here/case-studies",
+				item: "https://www.mattheibs.com/case-studies",
 			},
 			{
 				"@type": "ListItem",
 				position: 3,
 				name: study.name,
-				item: `here/case-study/${study.slug}`,
+				item: `https://www.mattheibs.com/case-study/${study.slug}`,
 			},
 		],
 	};
@@ -96,7 +96,10 @@ function CaseStudy() {
 								{study.name} Case Study | Matthew's
 								Frontend Developer Portfolio
 							</title>,
-							<link rel="canonical" href="here/about" />,
+							<link
+								rel="canonical"
+								href={`https://${study.slug}.mattheibs.com`}
+							/>,
 							<meta
 								key="meta"
 								name="description"
@@ -120,7 +123,7 @@ function CaseStudy() {
 							<meta
 								key="og-url"
 								property="og:url"
-								content="here"
+								content={`https://www.mattheibs.com/case-study/${study.slug}`}
 							/>,
 							<meta
 								key="og-type"
@@ -161,7 +164,7 @@ function CaseStudy() {
 									},
 									"description":
 										${study.metaDescription},
-									"url": "here",
+									"url": ${study.projectUrl},
 								}`}
 							</script>,
 							<script
@@ -176,7 +179,6 @@ function CaseStudy() {
 								Matthew Heiberg | Frontend Developer
 								Portfolio
 							</title>,
-							<link rel="canonical" href="here/about" />,
 					  ]}
 			</Helmet>
 			{study ? (

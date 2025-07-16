@@ -23,7 +23,7 @@ function Home() {
 				<title>
 					Matthew Heiberg | Frontend Developer Portfolio
 				</title>
-				<link rel="canonical" href="here/about" />,
+				<link rel="canonical" href="https://www.mattheibs.com" />,
 				<meta
 					name="description"
 					content="Frontend Developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. I build fast, interactive, and scalable web applications with clean, modern code. Explore my portfolio to see my latest projects."
@@ -40,7 +40,10 @@ function Home() {
 					property="og:image"
 					content="https://example.com/og-image.jpg"
 				/>
-				<meta property="og:url" content="https://example.com" />
+				<meta
+					property="og:url"
+					content="https://www.mattheibs.com"
+				/>
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta
@@ -61,11 +64,11 @@ function Home() {
 							"@context": "https://schema.org",
 							"@type": "Person",
 							"name": "Matthew Heiberg",
-							"url": "here",
+							"url": "https://www.mattheibs.com",
 							"jobTitle": "Frontend Developer",
 							"sameAs": [
-								"here",
-								"here"
+								"https://www.linkedin.com/in/matthew-heiberg-265071159/",
+								"https://github.com/Mattheibs"
 							]
 						}
 					`}
@@ -80,7 +83,7 @@ function Home() {
 								"@type": "ListItem",
 								"position": 1,
 								"name": "Home",
-								"item": "here-url"
+								"item": "https://www.mattheibs.com"
 								}
 							]
 						}

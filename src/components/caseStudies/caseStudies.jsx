@@ -23,7 +23,10 @@ function CaseStudies() {
 				<title>
 					Case Studies | Matthew's Frontend Developer Portfolio
 				</title>
-				<link rel="canonical" href="here/about" />
+				<link
+					rel="canonical"
+					href="https://www.mattheibs.com/case-studies"
+				/>
 				<meta
 					name="description"
 					content="Explore detailed case studies of web applications built by Matthew Heiberg, a frontend developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. Dive into real-world projects showcasing performance, scalability, and clean modern code."
@@ -40,7 +43,10 @@ function CaseStudies() {
 					property="og:image"
 					content="https://example.com/og-image.jpg"
 				/>
-				<meta property="og:url" content="https://example.com" />
+				<meta
+					property="og:url"
+					content="https://www.mattheibs.com/case-studies"
+				/>
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta
@@ -65,13 +71,13 @@ function CaseStudies() {
 							"@type": "CreativeWork",
 							"name": "Wanderly",
 							"url": "here",
-							"description": "here"
+							"description": "Wanderly is  a responsive React web app built with Vite, featuring fast performance, modern UI, and mobile-friendly design using best front-end development practices."
 							},
 							{
 							"@type": "CreativeWork",
 							"name": "Finpulse",
 							"url": "here",
-							"description": "here"
+							"description": "Finpulse is a responsive, interactive website developed using HTML, CSS, and JavaScript. This case study showcases my frontend development process, from planning to implementation, with a focus on performance, accessibility, and user experience."
 							}
 						]
 					`}
@@ -86,26 +92,19 @@ function CaseStudies() {
 								"@type": "ListItem",
 								"position": 1,
 								"name": "Home",
-								"item": "here"
+								 "item": "https://mattheibs.com"
 								},
 								{
 								"@type": "ListItem",
 								"position": 2,
 								"name": "Case Studies",
-								"item": "here"
+								"item": "https://mattheibs.com/case-studies"
 								}
 							]
 						}
 					`}
 				</script>
 			</Helmet>
-			<title>
-				Case Studies | Matthew's Frontend Developer Portfolio
-			</title>
-			<meta
-				name="description"
-				content="Explore a collection of detailed frontend development case studies showcasing my work with React, JavaScript, HTMX, Node.js, and more."
-			/>
 			<div className="case-studies-filter">
 				<h3>Filter Categories:</h3>
 				<div className="case-studies-filter-pills">

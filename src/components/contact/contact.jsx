@@ -8,7 +8,11 @@ function Contact() {
 				<title>
 					Contact Me | Matthew's Frontend Developer Portfolio
 				</title>
-				<link rel="canonical" href="here/about" />,
+				<link
+					rel="canonical"
+					href="https://www.mattheibs.com/contact"
+				/>
+				,
 				<meta
 					name="description"
 					content="Get in touch with Matthew Heiberg for frontend development projects, collaborations, or freelance opportunities. Let's build something great together!"
@@ -25,7 +29,10 @@ function Contact() {
 					property="og:image"
 					content="https://example.com/og-image.jpg"
 				/>
-				<meta property="og:url" content="https://example.com" />
+				<meta
+					property="og:url"
+					content="https://www.mattheibs.com/contact"
+				/>
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta
@@ -49,7 +56,7 @@ function Contact() {
 							"@type": "Person",
 							"name": "Matthew Heiberg",
 							"email": "mailto:mattheibs@gmail.com",
-							"url": "here"
+							"url": "https://www.mattheibs.com/contact"
 						}
 						}
 					`}

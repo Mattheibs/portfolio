@@ -10,14 +10,17 @@ function About() {
 				<title>
 					About Me | Matthew's Frontend Developer Portfolio
 				</title>
-				<link rel="canonical" href="here/about" />
+				<link
+					rel="canonical"
+					href="https://www.mattheibs.com/about"
+				/>
 				<meta
 					name="description"
 					content="Get in touch with Matthew Heiberg for frontend development projects, collaborations, or freelance opportunities. Let's build something great together!"
 				/>
 				<meta
 					property="og:title"
-					content="About Me | Matthew's Frontend Developer Portfolio"
+					content="About | Matthew's Frontend Developer Portfolio"
 				/>
 				<meta
 					property="og:description"
@@ -27,7 +30,10 @@ function About() {
 					property="og:image"
 					content="https://example.com/og-image.jpg"
 				/>
-				<meta property="og:url" content="https://example.com" />
+				<meta
+					property="og:url"
+					content="https://www.mattheibs.com/about"
+				/>
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta
@@ -46,12 +52,12 @@ function About() {
 					{`{
 						"@context": "https://schema.org",
 						"@type": "AboutPage",
-						"name": "About Me",
+						"name": "About",
 						"mainEntity": {
 							"@type": "Person",
 							"name": "Matthew Heiberg",
 							"jobTitle": "Frontend Developer",
-							"description": "Here"
+							"description": "Get in touch with Matthew Heiberg for frontend development projects, collaborations, or freelance opportunities. Let's build something great together!"
 						}
 					`}
 				</script>

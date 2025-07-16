@@ -12,21 +12,54 @@ function MoreInfo() {
 				<title>
 					More Info | Matthew's Frontend Developer Portfolio
 				</title>
-				<link rel="canonical" href="here/about" />,
+				<link
+					rel="canonical"
+					href="https://www.mattheibs.com/more-info"
+				/>
 				<meta
 					name="description"
 					content="Learn more about Matthew Heiberg beyond code. Discover how passions like gaming and bouldering fuel his creativity, problem-solving, and focus as a frontend developer. A glimpse into the person behind the projects."
+				/>
+				<meta
+					property="og:title"
+					content="More Info | Matthew's Frontend Developer Portfolio"
+				/>
+				<meta
+					property="og:description"
+					content="Learn more about Matthew Heiberg beyond code. Discover how passions like gaming and bouldering fuel his creativity, problem-solving, and focus as a frontend developer. A glimpse into the person behind the projects."
+				/>
+				<meta
+					property="og:image"
+					content="https://example.com/og-image.jpg"
+				/>
+				<meta
+					property="og:url"
+					content="https://www.mattheibs.com/more-info"
+				/>
+				<meta property="og:type" content="website" />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta
+					name="twitter:title"
+					content="More Info | Matthew's Frontend Developer Portfolio"
+				/>
+				<meta
+					name="twitter:description"
+					content="Learn more about Matthew Heiberg beyond code. Discover how passions like gaming and bouldering fuel his creativity, problem-solving, and focus as a frontend developer. A glimpse into the person behind the projects."
+				/>
+				<meta
+					name="twitter:image"
+					content="https://example.com/twitter-image.jpg"
 				/>
 				<script type="application/ld+json">
 					{`{
 						"@context": "https://schema.org",
 						"@type": "AboutPage",
-						"name": "About Me",
+						"name": "More Info",
 						"mainEntity": {
 							"@type": "Person",
 							"name": "Matthew Heiberg",
 							"jobTitle": "Frontend Developer",
-							"description": "Here"
+							"description": "Learn more about Matthew Heiberg beyond code. Discover how passions like gaming and bouldering fuel his creativity, problem-solving, and focus as a frontend developer. A glimpse into the person behind the projects."
 						}
 					`}
 				</script>
