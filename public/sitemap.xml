@@ -31,6 +31,13 @@
   </url>
 
   <url>
+    <loc>https://finpulse.mattheibs.com</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.mattheibs.com/more-info</loc>
     <lastmod>2025-07-01</lastmod>
     <changefreq>monthly</changefreq>
