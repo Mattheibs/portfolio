@@ -170,13 +170,13 @@ function CaseStudy() {
 					>
 						<picture>
 							<source
-								srcSet={`/images/${study.slug}/${study.displayImageMobile}`}
+								srcSet={`/portfolio/images/${study.slug}/${study.displayImageMobile}`}
 								media="(max-width: 768px)"
 							/>
 							<img
 								width="969"
 								height="431"
-								src={`/images/${study.slug}/${study.displayImage}`}
+								src={`/portfolio/images/${study.slug}/${study.displayImage}`}
 								alt="Somone gaming"
 							/>
 						</picture>
@@ -243,7 +243,7 @@ function CaseStudy() {
 									<img
 										loading="lazy"
 										key={index}
-										src={`/images/${study.slug}/${image}`}
+										src={`/portfolio/images/${study.slug}/${image}`}
 										alt={`${study.name} preview`}
 									></img>
 								))}
@@ -262,14 +262,14 @@ function CaseStudy() {
 						<div className="case-study-full-image">
 							<picture>
 								<source
-									srcSet={`/images/${study.slug}/${study.closingImgMobile}`}
+									srcSet={`/portfolio/images/${study.slug}/${study.closingImgMobile}`}
 									media="(max-width: 768px)"
 								/>
 								<img
 									loading="lazy"
 									width="969"
 									height="785"
-									src={`/images/${study.slug}/${study.closingImg}`}
+									src={`/portfolio/images/${study.slug}/${study.closingImg}`}
 									alt="Somone gaming"
 								/>
 							</picture>

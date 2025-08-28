@@ -94,7 +94,7 @@ function Home() {
 							>
 								<div className="case-hover">
 									<img
-										src={`/images/${project.slug}/${project.displayImage}`}
+										src={`/portfolio/images/${project.slug}/${project.displayImage}`}
 										alt={`${project.name} preview`}
 									/>
 								</div>

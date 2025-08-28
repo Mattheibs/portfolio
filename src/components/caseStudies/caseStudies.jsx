@@ -114,7 +114,7 @@ function CaseStudies() {
 					<Link to={`/case-study/${caseStudy.slug}`}>
 						<div className="case-hover">
 							<img
-								src={`/images/${caseStudy.slug}/${caseStudy.displayImage}`}
+								src={`/portfolio/images/${caseStudy.slug}/${caseStudy.displayImage}`}
 								alt={`${caseStudy.name} preview`}
 							/>
 						</div>
@@ -135,7 +135,7 @@ function CaseStudies() {
 						<Link to={`/case-study/${caseStudy.slug}`}>
 							<div className="case-hover">
 								<img
-									src={`/images/${caseStudy.slug}/${caseStudy.displayImage}`}
+									src={`/portfolio/images/${caseStudy.slug}/${caseStudy.displayImage}`}
 									alt={`${caseStudy.name} preview`}
 								/>
 							</div>
