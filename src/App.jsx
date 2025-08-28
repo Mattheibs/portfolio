@@ -14,7 +14,7 @@ import { HelmetProvider } from "react-helmet-async";
 function App() {
 	return (
 		<HelmetProvider>
-			<Router>
+			<Router basename="/portfolio">
 				<Suspense fallback={<div>Loading...</div>}>
 					<div className="App" id="layout">
 						<SideBar />
