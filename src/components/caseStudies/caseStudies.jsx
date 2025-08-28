@@ -4,12 +4,6 @@ import { Helmet } from "react-helmet-async";
 function CaseStudies() {
 	const caseStudies = [
 		{
-			name: "Wanderly",
-			languagesUsed: ["HTML", "CSS", "JavaScript"],
-			displayImage: "wanderly-display-img.webp",
-			slug: "wanderly",
-		},
-		{
 			name: "Finpulse",
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
 			displayImage: "finpulse-display-img.webp",
@@ -25,7 +19,7 @@ function CaseStudies() {
 				</title>
 				<link
 					rel="canonical"
-					href="https://www.mattheibs.com/case-studies"
+					href="https://mattheibs.github.io/portfolio/case-studies"
 				/>
 				<meta
 					name="description"
@@ -45,7 +39,7 @@ function CaseStudies() {
 				/>
 				<meta
 					property="og:url"
-					content="https://www.mattheibs.com/case-studies"
+					content="https://mattheibs.github.io/portfolio/case-studies"
 				/>
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary_large_image" />
@@ -92,13 +86,13 @@ function CaseStudies() {
 								"@type": "ListItem",
 								"position": 1,
 								"name": "Home",
-								 "item": "https://mattheibs.com"
+								 "item": "https://mattheibs.github.io/portfolio"
 								},
 								{
 								"@type": "ListItem",
 								"position": 2,
 								"name": "Case Studies",
-								"item": "https://mattheibs.com/case-studies"
+								"item": "https://mattheibs.github.io/portfolio/case-studies"
 								}
 							]
 						}

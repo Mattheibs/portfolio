@@ -3,49 +3,42 @@
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.mattheibs.com</loc>
+    <loc>https://mattheibs.github.io/portfolio</loc>
     <lastmod>2025-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.mattheibs.com/contact</loc>
+    <loc>https://mattheibs.github.io/portfolio/contact</loc>
     <lastmod>2025-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.mattheibs.com/case-studies</loc>
+    <loc>https://mattheibs.github.io/portfolio/case-studies</loc>
     <lastmod>2025-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://wanderly.mattheibs.com</loc>
+    <loc>https://mattheibs.github.io/finpulse/</loc>
     <lastmod>2025-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://finpulse.mattheibs.com</loc>
-    <lastmod>2025-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.mattheibs.com/more-info</loc>
+    <loc>https://mattheibs.github.io/portfolio/more-info</loc>
     <lastmod>2025-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.mattheibs.com/about</loc>
+    <loc>https://mattheibs.github.io/portfolio/about</loc>
     <lastmod>2025-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

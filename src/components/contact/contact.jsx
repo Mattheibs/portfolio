@@ -10,7 +10,7 @@ function Contact() {
 				</title>
 				<link
 					rel="canonical"
-					href="https://www.mattheibs.com/contact"
+					href="https://mattheibs.github.io/portfolio/contact"
 				/>
 				,
 				<meta
@@ -31,7 +31,7 @@ function Contact() {
 				/>
 				<meta
 					property="og:url"
-					content="https://www.mattheibs.com/contact"
+					content="https://mattheibs.github.io/portfolio/contact"
 				/>
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary_large_image" />
@@ -56,7 +56,7 @@ function Contact() {
 							"@type": "Person",
 							"name": "Matthew Heiberg",
 							"email": "mailto:mattheibs@gmail.com",
-							"url": "https://www.mattheibs.com/contact"
+							"url": "https://mattheibs.github.io/portfolio/contact"
 						}
 						}
 					`}

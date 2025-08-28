@@ -14,7 +14,7 @@ function MoreInfo() {
 				</title>
 				<link
 					rel="canonical"
-					href="https://www.mattheibs.com/more-info"
+					href="https://mattheibs.github.io/portfolio/more-info"
 				/>
 				<meta
 					name="description"
@@ -34,7 +34,7 @@ function MoreInfo() {
 				/>
 				<meta
 					property="og:url"
-					content="https://www.mattheibs.com/more-info"
+					content="https://mattheibs.github.io/portfolio/more-info"
 				/>
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary_large_image" />

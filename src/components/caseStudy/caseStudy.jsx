@@ -6,33 +6,6 @@ function CaseStudy() {
 	const { slug } = useParams();
 	const data = [
 		{
-			name: "Wanderly",
-			gridImages: [
-				"wanderly-grid-1.webp",
-				"wanderly-grid-2.webp",
-				"wanderly-grid-3.webp",
-			],
-			projectIntroduction: [
-				"I recently completed building a responsive and interactive web application using Vite and React. The goal of the project was to create a modern, user-friendly platform with an intuitive interface and smooth performance. This project allowed me to deepen my experience with React while leveraging Vite’s fast development environment and optimized build process to enhance both development efficiency and user experience.",
-			],
-			projectApproach: [
-				"The development process began with careful planning and wireframing to define the application’s layout, core features, and user interactions. I used React to build a component-based architecture, which allowed for reusable, modular code and simplified state management. The structure of the application was organized for scalability, and attention was given to semantic HTML within React components to support accessibility and SEO.",
-				"Using Vite as the build tool significantly improved development speed and performance. Its fast Hot Module Replacement (HMR) and optimized bundling allowed me to iterate quickly and deploy a lightweight, high-performance web app. Throughout the process, I adhered to modern best practices, including testing across various devices and browsers to ensure consistent functionality and responsiveness.",
-			],
-			projectOutcome: [
-				"The final product is a responsive, high-performing React application that aligns with modern web development standards. It features a polished UI, seamless navigation, and dynamic interactions that contribute to an enjoyable user experience. By combining Vite’s speed and React’s flexibility, I delivered a professional-grade application that highlights both my front-end development skills and my ability to work with modern JavaScript frameworks and tooling",
-			],
-			displayImage: "wanderly-display-img.webp",
-			closingImg: "wanderly-closing-img.webp",
-			displayImageMobile: "wanderly-display-img-mobile.webp",
-			closingImgMobile: "wanderly-closing-img-mobile.webp",
-			languagesUsed: ["HTML", "CSS", "JavaScript"],
-			projectUrl: "https://wanderly.mattheibs.com",
-			metaDescription:
-				"Wanderly is  a responsive React web app built with Vite, featuring fast performance, modern UI, and mobile-friendly design using best front-end development practices.",
-			slug: "wanderly",
-		},
-		{
 			name: "Finpulse",
 			gridImages: [
 				"finpulse-grid-1.webp",
@@ -54,10 +27,11 @@ function CaseStudy() {
 			displayImageMobile: "finpulse-display-img-mobile.webp",
 			closingImgMobile: "finpulse-closing-img-mobile.webp",
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
-			projectUrl: "https://finpulse.mattheibs.com",
+			projectUrl: "https://mattheibs.github.io/finpulse/",
 			metaDescription:
 				"Finpulse is a responsive, interactive website developed using HTML, CSS, and JavaScript. This case study showcases my frontend development process, from planning to implementation, with a focus on performance, accessibility, and user experience.",
 			slug: "finpulse",
+			canonicalTag: "https://mattheibs.github.io/finpulse/",
 		},
 	];
 
@@ -70,19 +44,19 @@ function CaseStudy() {
 				"@type": "ListItem",
 				position: 1,
 				name: "Home",
-				item: "https://www.mattheibs.com",
+				item: "https://mattheibs.github.io/portfolio",
 			},
 			{
 				"@type": "ListItem",
 				position: 2,
 				name: "Case Studies",
-				item: "https://www.mattheibs.com/case-studies",
+				item: "https://mattheibs.github.io/portfolio/case-studies",
 			},
 			{
 				"@type": "ListItem",
 				position: 3,
 				name: study.name,
-				item: `https://www.mattheibs.com/case-study/${study.slug}`,
+				item: `https://mattheibs.github.io/portfolio/case-study/${study.slug}`,
 			},
 		],
 	};
@@ -98,7 +72,7 @@ function CaseStudy() {
 							</title>,
 							<link
 								rel="canonical"
-								href={`https://${study.slug}.mattheibs.com`}
+								href={study.canonicalTag}
 							/>,
 							<meta
 								key="meta"
@@ -123,7 +97,7 @@ function CaseStudy() {
 							<meta
 								key="og-url"
 								property="og:url"
-								content={`https://www.mattheibs.com/case-study/${study.slug}`}
+								content={`https://mattheibs.github.io/portfolio/case-study/${study.slug}`}
 							/>,
 							<meta
 								key="og-type"

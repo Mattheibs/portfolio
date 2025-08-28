@@ -5,12 +5,6 @@ import { Helmet } from "react-helmet-async";
 function Home() {
 	const data = [
 		{
-			name: "Wanderly",
-			languagesUsed: ["HTML", "CSS", "JavaScript"],
-			displayImage: "wanderly-display-img.webp",
-			slug: "wanderly",
-		},
-		{
 			name: "Finpulse",
 			languagesUsed: ["HTML", "CSS", "JavaScript"],
 			displayImage: "finpulse-display-img.webp",
@@ -23,7 +17,7 @@ function Home() {
 				<title>
 					Matthew Heiberg | Frontend Developer Portfolio
 				</title>
-				<link rel="canonical" href="https://www.mattheibs.com" />,
+				<link rel="canonical" href="https://mattheibs.github.io/portfolio" />,
 				<meta
 					name="description"
 					content="Frontend Developer skilled in JavaScript, React, HTMX, HTML, CSS, Pug, and Node.js. I build fast, interactive, and scalable web applications with clean, modern code. Explore my portfolio to see my latest projects."
@@ -42,7 +36,7 @@ function Home() {
 				/>
 				<meta
 					property="og:url"
-					content="https://www.mattheibs.com"
+					content="https://mattheibs.github.io/portfolio"
 				/>
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary_large_image" />
@@ -64,7 +58,7 @@ function Home() {
 							"@context": "https://schema.org",
 							"@type": "Person",
 							"name": "Matthew Heiberg",
-							"url": "https://www.mattheibs.com",
+							"url": "https://mattheibs.github.io/portfolio",
 							"jobTitle": "Frontend Developer",
 							"sameAs": [
 								"https://www.linkedin.com/in/matthew-heiberg-265071159/",
@@ -83,7 +77,7 @@ function Home() {
 								"@type": "ListItem",
 								"position": 1,
 								"name": "Home",
-								"item": "https://www.mattheibs.com"
+								"item": "https://mattheibs.github.io/portfolio"
 								}
 							]
 						}

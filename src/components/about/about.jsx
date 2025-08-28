@@ -12,7 +12,7 @@ function About() {
 				</title>
 				<link
 					rel="canonical"
-					href="https://www.mattheibs.com/about"
+					href="https://mattheibs.github.io/portfolio/about"
 				/>
 				<meta
 					name="description"
@@ -32,7 +32,7 @@ function About() {
 				/>
 				<meta
 					property="og:url"
-					content="https://www.mattheibs.com/about"
+					content="https://mattheibs.github.io/portfolio/about"
 				/>
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary_large_image" />
