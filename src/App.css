@@ -123,7 +123,7 @@ button:active {
 }
 
 body {
-  background-image: url(../images/home-bg.webp);
+  background-image: url(./images/home-bg.webp);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   overflow: hidden;
@@ -134,7 +134,7 @@ body {
     padding: 50px;
     min-height: 100vh;
     margin-left: 0;
-    overflow: auto;
+    overflow: auto !important;
     height: 100%;
   }
 
@@ -170,7 +170,7 @@ body {
   }
 
   body {
-    background-image: url(../images/mobile-bg.webp);
+    background-image: url(./images/mobile-bg.webp);
   }
 
   .pill {

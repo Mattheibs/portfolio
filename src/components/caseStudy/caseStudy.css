@@ -3,6 +3,7 @@
     margin: 0 auto;
 }
 
+
 .case-study-nav {
     display: flex;
     gap: 2px;
@@ -27,6 +28,7 @@
 
 .case-study img {
     max-width: 100%;
+    object-fit: cover;
 }
 
 .case-study-content-header {
